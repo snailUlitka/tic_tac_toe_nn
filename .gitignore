@@ -1,0 +1,13 @@
+# IDEA
+./idea
+.pycharm/
+
+# VS Code
+.vscode/
+.continueignore
+
+# venv
+.venv/
+
+# Cache
+**/__pycache__/
