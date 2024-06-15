@@ -1,9 +1,18 @@
-# TODO: Write doc here
+"""Module contain 2 classes: 
+    `Figure` - class with 3 consts for empty cell or one of figures
+        and static method for get represetation of constant
+    `TicTacToe` - class with game logic and game field.
+"""
 import numpy as np
 
 
 class Figure:
-    # TODO: Write doc here
+    """Class with constants:
+        `EMPTY` - empty cell
+        `CROSS` - cross cell
+        `ZERO` - zero cell
+        And static method `get_str_repr` to get str repr of figure.
+    """
     EMPTY = 0
     CROSS = 1
     ZERO = 2
@@ -23,7 +32,7 @@ class Figure:
 
 
 class TicTacToe:
-    # TODO: Write doc here
+    """TicTacToe game logic class and game field."""
     def __init__(self):
         gf = ((Figure.EMPTY, Figure.EMPTY, Figure.EMPTY),
               (Figure.EMPTY, Figure.EMPTY, Figure.EMPTY),
@@ -118,3 +127,4 @@ class TicTacToe:
             res_str += "]\n"
 
         return res_str
+
